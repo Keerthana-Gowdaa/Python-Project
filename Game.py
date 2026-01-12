@@ -1,6 +1,4 @@
-import random
-
-number = random.randint(1, 100)
+number = 74   # fixed correct number
 attempts = 0
 
 print("Guess the number between 1 and 100")
@@ -14,5 +12,6 @@ while True:
     elif guess > number:
         print("Too high!")
     else:
-        print(f"Correct! You guessed it in {attempts} attempts.")
+        print(f"Correct! The number was {number}.")
+        print(f"You guessed it in {attempts} attempts.")
         break
